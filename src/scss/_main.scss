@@ -1,0 +1,48 @@
+.drawer-header {
+    margin-left: -8px !important;
+}
+
+body {
+    background: rgb(48, 48, 48);
+}
+
+* {
+    @include user-select();
+}
+
+input {
+    -webkit-appearance: none !important;
+}
+
+.sign-dialog {
+    text-align: center;
+    @media screen and (max-width: 600px) {
+        h3 {
+            font-size: 14px !important;
+        }
+    }
+
+    &__row {
+        margin: 20px 0 !important;
+        @media screen and (max-width: 600px) {
+            > div,
+            button {
+                width: 100% !important;
+            }
+        }
+    }
+}
+.content-wrapper{
+  padding-top: 20px;
+}
+.table-parent {
+    td,
+    th {
+        vertical-align: middle !important;
+    }
+    tr{
+      &:nth-child(2n){
+        background: #404040;
+      }
+    }
+}
